@@ -6,11 +6,11 @@ description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profpic.jpg
   address: >
-	<p>2nd Floor TSRB</p> 
-	<p>85 5th St NW</p> 
-	<p>Atlanta, GA 30308</p>
+    <p>2nd Floor TSRB</p> 
+    <p>85 5th St NW</p> 
+    <p>Atlanta, GA 30308</p>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
