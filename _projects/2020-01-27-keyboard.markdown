@@ -8,7 +8,8 @@ img: /assets/img/keyboard.jpg
 tags:
   - Instruments
 ---
-![Prototype Pictures](/assets/images/keyboard.jpg)
+![Prototype Pictures](/assets/images/keyboard.jpg)  
+
 Mechanical key, raspberry pi synthesizer (MK-RPS) is an open source platform for generating music. The system is primarily composed of two parts:
 -Arduino powered keyboard which takes input from the Cherry MX mechanical keyboard switches and outputs MIDI events
 -Raspberry Pi Zero embedded computer which receives MIDI events over USBand parses them via a Processing program to synthesize and output sounds. ThePi will allow the user to adjust settings via a GUI displayed on a small HDMIscreen.

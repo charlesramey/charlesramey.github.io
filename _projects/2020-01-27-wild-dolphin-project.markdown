@@ -8,7 +8,8 @@ img: /assets/img/chat.jpg
 tags:
   - Wearables
 ---
-![CHAT](/assets/images/chat.jpg)
+![CHAT](/assets/images/chat.jpg)  
+
 Since  2010  Georgia  Institute  of  Technology  has  been collaborating with marine biologists from the Wild Dolphin Project to build computers which facilitate two-way human, wild dolphin interaction through the assignment of artificial whistles  to  objects  such  as  pieces  of  rope,  seaweed, seagrass,  and  scarfs. We call this project Cetacean Hearing and Telemetry (or CHAT for short).
 
 Starting in 2015, I began to work on the CHAT project as an undergraduate researcher. My first roles on the project were documentation and aiding with the construction of the 2015 generation of wearable computers. Georgia Tech research scientist Scott Gilliland showed me the ropes as I followed him through the production process. Scott designed custom high frequency speakers and waterproof keyboards specifically for these wearable computers. These parts were the first things I was able to help construct for the project. Along the way, I compiled an extensive assembly and operations manual for the wearable computers. 

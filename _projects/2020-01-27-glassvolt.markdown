@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "Wrist Worn Volt Meter"
+title: "Wrist Worn Voltage Meter"
 date: 2020-01-27
 description: 
 author: Charles Ramey
+img: /assets/img/glassvolt.jpg
 tags:
-  - Wearables
+  - Robotics
 ---
-![GlassVolt Prototype](https://raw.githubusercontent.com/charlesramey/charlesramey.github.io/master/assets/images/glassvolt.jpg)
+![GlassVolt Prototype](/assets/img/glassvolt.jpg)  
+
 This operational multimeter uses Bluetooth to transmit readings to Google Glass for display
+

@@ -2,10 +2,17 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: 
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+* **Georgia Governor’s Honors Program**
+	- Computer Science Instructor [Summer 2015]
+	- Mechanical Engineering Instructor [Summer 2016, Summer 2018]
+	- Engineering Department Chair [Summer 2018]
+* **CS3651: Prototyping Intelligent Appliances**, Georgia Institute of Technology
+	- Head Teaching Assistant [Spring 2017, Spring 2018, Fall 2019]
+* **CS6601: Artificial Intelligence**, Georgia Institute of Technology
+	- Graduate Teaching Assistant [Spring 2020, Fall 2020]
+* **CS6452: Prototyping Interactive Systems**, Georgia Institute of Technology
+	- Head Teaching Assistant [Summer 2020]
