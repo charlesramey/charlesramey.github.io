@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Raspberry Pi Mechanical Keyboard Synth"
+date: 2020-01-27
+description: 
+author: Charles Ramey
+img: /assets/img/keyboard.jpg
+tags:
+  - Instruments
+---
+![Prototype Pictures](/assets/images/keyboard.jpg)
+Mechanical key, raspberry pi synthesizer (MK-RPS) is an open source platform for generating music. The system is primarily composed of two parts:
+-Arduino powered keyboard which takes input from the Cherry MX mechanical keyboard switches and outputs MIDI events
+-Raspberry Pi Zero embedded computer which receives MIDI events over USBand parses them via a Processing program to synthesize and output sounds. ThePi will allow the user to adjust settings via a GUI displayed on a small HDMIscreen.
+
+## System Architecture
+### Hardware
+-A custom designed circuit board with mechanical keyswitches, a GPIO expander,and an Arduino.
+-An enclosure to hold the keyboard, RaspberryPi, and small screen.
+### Software
+-An Arduino program to take input from the key switches and output serialcommands over USB using the CommandMessenger library.
+-A Python program which will read serial commands from the Arduino using thePyCommandMessenger library, process the serial commands into sound outputsusing the pyFluidSynth library, display current synth voice, filters, and volume viaa GUI, and react to user input to change settings.
+

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Icefin Robot"
+date: 2020-01-27
+description: 
+author: Charles Ramey
+img: /assets/img/icefin.jpg
+tags:
+  - Robotics
+---
+![Icefin Team with the vehicle](/assets/images/icefin.jpg)
+Icefin is a hybrid ROV/AUV, designed to function as a robotic oceanographer in Antarctic under-ice waters.
