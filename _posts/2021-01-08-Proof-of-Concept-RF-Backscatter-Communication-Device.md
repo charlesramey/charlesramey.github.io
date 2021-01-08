@@ -28,8 +28,11 @@ Additionally I'll be utilizing the following equipment:
 - Oscilloscope (Optional but helpful for debugging)
 - Two HackRF One SDRs
 - Two 2.4Ghz Antennas (You can borrow some wifi antennas off of a wifi router or order some directional high gain antennas from amazon. I recommend [this log periodic antenna](https://www.amazon.com/1-35GHz-9-5GHz-Log-Periodic-Directional-Antenna-Connector/dp/B0781FHTT1/ref=sxts_sxwds-bia-wc-rsf1_0?cv_ct_cx=log+periodic+antenna&dchild=1&keywords=log+periodic+antenna&pd_rd_i=B0781FHTT1&pd_rd_r=b9b1732d-ae53-4889-ac65-ad079cf2e42f&pd_rd_w=okfRR&pd_rd_wg=BPRPU&pf_rd_p=e0f994a8-a359-40a9-8917-dadca71c7184&pf_rd_r=YG1X5JJ6N1JTS2FHG2ZQ&psc=1&qid=1610120840&sr=1-1-526ea17f-3f73-4b50-8cd8-6acff948fa5a))
+
 - - - -
+
 ## Backscatter Communication Architecture
+
 ![This image was taken from: https://doi.org/10.1145/3133956.3138830](/assets/img/architecture.png)
 
 Typically backscatter sensors require a radio transmitter and a radio receiver. The transmitter sends energy towards the sensor in the form of radio waves. The sensor then modulates these radio waves and in the process some of these waves are scattered back towards the radio receiver. Fortunately for modern engineers such as ourselves, we have software defined radios which can handle both the transmitting and receiving radio tasks! For the purposes of my demonstration, I’ll be using two HackRF’s. While these SDRs aren’t quite cheap, they are at least readily available for purchase.
@@ -37,6 +40,7 @@ Typically backscatter sensors require a radio transmitter and a radio receiver. 
 
 ## Circuit Schematic
 ![](/assets/img/sky65050_backscatter_schematic.jpg)
+
 As always, I’d recommend doing a quick read through of the SKY65050  [data sheet](https://www.mouser.com/datasheet/2/472/SKY65050_372LF_200967G-1501297.pdf). As far as data sheets go, I found this one in particular to be quite helpful and pretty straightforward to read. It’s important to note several things mentioned in this data sheet, and we can learn a lot from the provided schematic of the SKY65050 evaluation board. That being said, there is also a lot of information in this data sheet which we can safely ignore for now since we aren’t trying to actually achieve this device’s full specs of capability for RF switching.
 Of particular note:
 -If we’re thinking of this device/transistor as a switch, the analogy would liken this SKY65050 to a normally closed switch. That means, when no signal is applied to the gate of the transistor, the device allows current to flow from drain to source (and vice versa I believe?)
@@ -69,9 +73,10 @@ Here are a few of the hiccups I encountered and some brief notes on getting arou
   - In the device arguments field, enter: "hackrf=0" 
   - This will configure the gnuradio flow graph to utilize the first hackrf plugged into your system. 
   - You can now run this gnuradio flow graph and it will put one of your HackRF One to work as a reciever. 
-  - To utilize your second HackRF one as a transmitter for this experiment, pop open a terminal window and run the following command: $hackrf_transfer -s 2000000 -a 0 -x 30 -c 64 -f 2482000000 -d [insert the serial number for the second HackRF you found with the hackrf_info command earlier]
+  - To utilize your second HackRF one as a transmitter for this experiment, pop open a terminal window and run the following command: $hackrf_transfer -s 2000000 -a 0 -x 30 -c 64 -f 2482000000 -d \[insert the serial number for the second HackRF you found with the hackrf_info command earlier\]
 
   This should hopefully give you all the tools and tips you need to recreate my work!
+
 - - - -
 
 ## Demonstration Experiment
@@ -85,6 +90,9 @@ Here are a few of the hiccups I encountered and some brief notes on getting arou
 ## Open Questions
 - [ ] According to folks who have recreated Michael Ossmann’s NSAPlayset CONGAFLOCK RF retro-reflector, the 2N7000 transistor should be able to backscatter RF. I tried to recreate their circuits to no success. While I know the 2N7000 cant actually switch at a rate of 2.482GHz, this shouldn’t matter since we are only requiring the tag to switch at 10khz - 500khz. I wonder if perhaps the 2N7000 can’t actually pass the 2.482GHz signal between drain and source while the gate is powered on?
 - [ ] The SKY65050 data sheet mentions that the transistor’s gate should be attached to 0v in order to make the biasing work but in the provided schematic of the evaluation board, the source and gate are actually connected to each other via a capacitor. I think I’m misunderstanding exactly what capacitor C3 is doing between the source and gate. Do I need C3 in my circuit? Should I disconnect source and gate from each other?
+
+- - - -
+
 ## References
 - [“The Thing” Wikipedia Article](https://en.m.wikipedia.org/wiki/The_Thing_(listening_device))
 - [Michael Ossmann’s NSAPlayset DEFCON talk](https://youtu.be/mAai6dRAtFo)
