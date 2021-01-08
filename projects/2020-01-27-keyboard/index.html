@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Charles D. Ramey | blank</title>
+<title>Charles D. Ramey | Raspberry Pi Mechanical Keyboard Synth</title>
 <meta name="description" content="GaTech PhD student advised by Professor Thad Starner. I specialize in computational materials, pattern recognition, and robotics.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/2020-01-27-keyboard/">
 
     
 <!-- MathJax -->
@@ -71,7 +71,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -136,32 +136,34 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
 
-  <div class="header-bar">
-    <h1>Thoughts and Works</h1>
-    <h2>a collections of notes, thoughts, and project updates</h2>
-  </div>
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Raspberry Pi Mechanical Keyboard Synth</h1>
+    <p class="post-meta">January 27, 2020 • Charles Ramey</p>
+  </header>
+
+  <article class="post-content">
+    <p><img src="/assets/images/keyboard.jpg" alt="Prototype Pictures" /></p>
+
+<p>Mechanical key, raspberry pi synthesizer (MK-RPS) is an open source platform for generating music. The system is primarily composed of two parts:
+-Arduino powered keyboard which takes input from the Cherry MX mechanical keyboard switches and outputs MIDI events
+-Raspberry Pi Zero embedded computer which receives MIDI events over USBand parses them via a Processing program to synthesize and output sounds. ThePi will allow the user to adjust settings via a GUI displayed on a small HDMIscreen.</p>
+
+<h2 id="system-architecture">System Architecture</h2>
+<h3 id="hardware">Hardware</h3>
+<p>-A custom designed circuit board with mechanical keyswitches, a GPIO expander,and an Arduino.
+-An enclosure to hold the keyboard, RaspberryPi, and small screen.</p>
+<h3 id="software">Software</h3>
+<p>-An Arduino program to take input from the key switches and output serialcommands over USB using the CommandMessenger library.
+-A Python program which will read serial commands from the Arduino using thePyCommandMessenger library, process the serial commands into sound outputsusing the pyFluidSynth library, display current synth voice, filters, and volume viaa GUI, and react to user input to change settings.</p>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/Proof-of-Concept-RF-Backscatter-Communication-Device/">Proof of Concept RF Backscatter Communication Device</a></h3>
-        <p class="post-meta">January 8, 2021</p>
-        <p>A tutorial on getting started with RF backscatter devices</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/rsl10-hackery/">RSL10 Hackery</a></h3>
-        <p class="post-meta">July 28, 2020</p>
-        <p>A quasi-tutorial on getting up and running with the RSL10 development board.</p>
-      </li>
-    
-  </ul>
+  </article>
 
   
-
 
 </div>
 

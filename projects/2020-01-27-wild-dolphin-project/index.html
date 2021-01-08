@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Charles D. Ramey | blank</title>
+<title>Charles D. Ramey | CHAT Project</title>
 <meta name="description" content="GaTech PhD student advised by Professor Thad Starner. I specialize in computational materials, pattern recognition, and robotics.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/2020-01-27-wild-dolphin-project/">
 
     
 <!-- MathJax -->
@@ -71,7 +71,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -136,32 +136,34 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
 
-  <div class="header-bar">
-    <h1>Thoughts and Works</h1>
-    <h2>a collections of notes, thoughts, and project updates</h2>
-  </div>
+<div class="post">
 
+  <header class="post-header">
+    <h1 class="post-title">CHAT Project</h1>
+    <p class="post-meta">January 27, 2020 • Charles Ramey</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/Proof-of-Concept-RF-Backscatter-Communication-Device/">Proof of Concept RF Backscatter Communication Device</a></h3>
-        <p class="post-meta">January 8, 2021</p>
-        <p>A tutorial on getting started with RF backscatter devices</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/rsl10-hackery/">RSL10 Hackery</a></h3>
-        <p class="post-meta">July 28, 2020</p>
-        <p>A quasi-tutorial on getting up and running with the RSL10 development board.</p>
-      </li>
-    
-  </ul>
+  <article class="post-content">
+    <p><img src="/assets/images/chat.jpg" alt="CHAT" /></p>
+
+<p>Since  2010  Georgia  Institute  of  Technology  has  been collaborating with marine biologists from the Wild Dolphin Project to build computers which facilitate two-way human, wild dolphin interaction through the assignment of artificial whistles  to  objects  such  as  pieces  of  rope,  seaweed, seagrass,  and  scarfs. We call this project Cetacean Hearing and Telemetry (or CHAT for short).</p>
+
+<p>Starting in 2015, I began to work on the CHAT project as an undergraduate researcher. My first roles on the project were documentation and aiding with the construction of the 2015 generation of wearable computers. Georgia Tech research scientist Scott Gilliland showed me the ropes as I followed him through the production process. Scott designed custom high frequency speakers and waterproof keyboards specifically for these wearable computers. These parts were the first things I was able to help construct for the project. Along the way, I compiled an extensive assembly and operations manual for the wearable computers.</p>
+
+<p>As we began deploying the wearables more frequently and collected more data, we soon realized that our software recognition pipeline for matching patterns in the dolphin whistles was not sophisticated enough to actually detect sounds we might expect the dolphins to make. The initial recognition software employed what was the best algorithm our (somewhat computational limited) computers could run in real time. This algorithm was very similar to the process that Shazam employs to recognize what song is playing around you. You can read more about the Shazam algorithm <a href="https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf">here</a> if you’re curious.</p>
+
+<p><img src="/assets/images/CHATsystem.JPG" alt="A CHAT Wearable Computer System" /></p>
+
+<p>While very accurate, the version of the Shazam algorithm we employed ran around a process which was limited in the number of frequencies it could analyze and our computer’s processor could only run this algorithm at 44.1kHz sampling rate. This essentially meant that while dolphins can make sounds anywhere in the frequency range from 200Hz to 150kHz (with whistles in the 2kHz to 50kHz range typically used for social communications), we were only able to analyze whistles in the 2kHz to 20kHz range.</p>
+
+<p><img src="/assets/images/fft_filters.JPG" alt="Example FFT and filter responses" />
+(Note: This page is in progress.)</p>
+
+  </article>
 
   
-
 
 </div>
 
