@@ -15,7 +15,7 @@ Typically I keep my steak seasonings simple: salt, pepper, butter, garlic, and a
 Dry aging *can* be done at home but seems to require even more specialized equipment to get it right. Additionally, good dry aging takes time. Often the aging process takes a month up to several months. While this wait time is easily managed in restaurants with dedicated meat lockers, it isn't very sustainable in a residential fridge. 
 
 ## Enter Koji Mold
-There is plenty of buzz on the [internet](https://www.youtube.com/watch?v=xB4GcSiSQg0) about using a mold commonly `known as koji (scientifically/formally known as aspergillus oryzae) for a variety of cooking purposes ranging from quick pickles, marinating fried chicken, and mimicking dry aging in steaks. 
+There is plenty of buzz on the [internet](https://www.youtube.com/watch?v=xB4GcSiSQg0) about using a mold commonly known as koji (scientifically/formally known as aspergillus oryzae) for a variety of cooking purposes ranging from quick pickles, marinating fried chicken, and mimicking dry aging in steaks. 
 
 Traditionally, by the way, this koji mold is typically used to break down rice for fermentation in the sake or miso-making process. 
 
@@ -38,7 +38,8 @@ After watching a few youtube videos on mimicking dry-aging with koji, I learned 
 - Vacuum bag your steaks
 - Cook the steaks sous vide at 130*F (For medium rare) for 1.5 hours
 - Remove the steaks from the sous vide bath and take them out of the vacuum bag 
-- Thoroughly dry the steaks
+- Thoroughly dry the steaks  
+
 ![Seared result!](/assets/img/seared.jpg)
 - Sear in a cast iron pan to your heart's content
 
