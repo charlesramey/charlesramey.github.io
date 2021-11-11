@@ -38,7 +38,7 @@ After watching a few youtube videos on mimicking dry-aging with koji, I learned 
 - Vacuum bag your steaks
 - Cook the steaks sous vide at 130*F (For medium rare) for 1.5 hours
 - Remove the steaks from the sous vide bath and take them out of the vacuum bag 
-- Thoroughly dry the steaks  
+- Thoroughly dry the steaks  <br>
 
 ![Seared result!](/assets/img/seared.jpg)
 - Sear in a cast iron pan to your heart's content
