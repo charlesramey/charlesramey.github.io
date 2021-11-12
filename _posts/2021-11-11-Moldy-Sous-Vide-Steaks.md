@@ -19,7 +19,7 @@ There is plenty of buzz on the [internet](https://www.youtube.com/watch?v=xB4GcS
 
 Traditionally, by the way, this koji mold is typically used to break down rice for fermentation in the sake or miso-making process. 
 
-For dry-aging steak, we're leveraging enzymatic action produced by the mold as it proliferates on the outside and inside of our steaks to break down proteins inside the meat. These fancy microbiological interactions result in a tenderization of the meat as well as the development of complex flavor compounds. More great info can be found [here](https://www.popsci.com/cook-steak-koji-fungus/x).
+For dry-aging steak, we're leveraging enzymatic action produced by the mold as it proliferates on the outside and inside of our steaks to break down proteins inside the meat. These fancy microbiological interactions result in a tenderization of the meat as well as the development of complex flavor compounds. More great info can be found [here](https://www.popsci.com/cook-steak-koji-fungus/).
 
 ## The process I followed
 After watching a few youtube videos on mimicking dry-aging with koji, I learned that the general process goes as follows:
